@@ -1,0 +1,48 @@
+.dashboard1__banner {
+  /* height: 100%; */
+  /* width: 100%; */
+  object-fit: contain;
+  margin: 30px;
+  /* padding: 10px; */
+  box-sizing: border-box;
+}
+/* .dashboard1__banner__cover {
+  background: url(../../../../public/images/default_dashboard1__banner2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 2px solid red;
+} */
+.dashboard1__banner__cover {
+  position: relative;
+  object-fit: contain;
+}
+.dashboard1__banner__cover > img {
+  /* position: absolute; */
+  object-fit: cover;
+  height: 21rem;
+  width: 55rem;
+  border-radius: 30px;
+}
+.dashboard1__banner__Season {
+  position: absolute;
+  top: 52%;
+  left: 20px;
+  color: rgb(211, 210, 210);
+}
+.dashboard1__banner__title {
+  position: absolute;
+  top: 60%;
+  left: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.dashboard1__banner__btn {
+  position: absolute !important;
+  top: 82%;
+  left: 20px;
+}

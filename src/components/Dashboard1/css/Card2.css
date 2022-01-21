@@ -1,0 +1,44 @@
+.dashboard1__card2 {
+  cursor: pointer;
+}
+.dashboard1__card2__cover {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  width: 17rem;
+  /* align-items: center; */
+  object-fit: contain;
+}
+.dashboard1__card2__cover > img {
+  height: 7rem;
+  border-radius: 10px;
+}
+.dashboard1__card2__content {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.dashboard1__card2__content__heading {
+  font-weight: 700;
+}
+.dashboard1__card2__content__duration {
+  color: green;
+  font-weight: 500;
+}
+.dashboard1__card2__content__progresses {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  background-color: rgba(255, 0, 0, 0.452);
+  border-radius: 20px;
+}
+.dashboard1__card2__content__progresses > div {
+  background-color: rgba(255, 0, 0, 1);
+  height: 5px;
+  border-radius: 20px;
+  width: 50%;
+  transition: all 500ms ease-in-out;
+  /* transform:  ; */
+}

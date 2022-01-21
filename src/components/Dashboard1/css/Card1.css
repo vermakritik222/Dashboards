@@ -1,0 +1,48 @@
+.dashboard1__card1 {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(243, 243, 243);
+}
+.dashboard1__card1__large {
+  background-color: rgb(255, 255, 255) !important;
+}
+.dashboard1__card1__img {
+  object-fit: contain;
+}
+.dashboard1__card1__img > img {
+  border-radius: 10px;
+  height: 15em;
+}
+.dashboard1__card1__img__large > img {
+  border-radius: 10px;
+  height: 10em;
+}
+.dashboard1__card1__sec1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.dashboard1__card1__rating {
+  border: 3px solid rgb(251, 255, 0);
+  width: fit-content;
+  margin-top: 5px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.dashboard1__card1__rating > span {
+  font-weight: 500;
+}
+.dashboard1__card1__sec1__season {
+  margin-left: 10px;
+  color: rgb(90, 86, 86);
+}
+
+.dashboard1__card1__name {
+  font-weight: 700;
+  margin: 5px 0px 0px 10px;
+  text-transform: capitalize;
+}

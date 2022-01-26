@@ -1,0 +1,25 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__IndexChart {
+    background-color: $color-indexChart-Bg;
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    .dashboard2__IndexChart__heading__bar {
+        @include FlexBox(row);
+        justify-content: space-between;
+        .dashboard2__IndexChart__heading {
+            color: $color-white;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+    }
+    .dashboard2__IndexChartMain {
+        @include FlexBox(row);
+        .dashboard2__IndexChartMain-right {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__nav {
+    background: $color-indexChart-Bg;
+    border-radius: 10px;
+    padding: 10px;
+    @include FlexBox(row);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12px 12px 12px;
+    > .dashboard2__nav__logo {
+        > h1 {
+            margin-left: 10px;
+            color: $color-white;
+        }
+    }
+    > .dashboard2__nav__itemlist {
+        @include FlexBox(row);
+        > .dashboard2__nav__item {
+            margin: 0px 10px;
+        }
+    }
+    > .dashboard2__nav__end {
+        width: 100px;
+        @include FlexBox(row);
+        justify-content: space-between;
+    }
+}

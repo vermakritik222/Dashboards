@@ -1,0 +1,28 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard2__indexChartCard {
+    padding: 15px 25px 15px 15px;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: $color-indexChartCard-Bg;
+    @include FlexBox(row);
+    width: max-content;
+    .dashboard2__indexChartCard-left {
+        margin-right: 7px;
+    }
+    .dashboard2__indexChartCard-right {
+        .dashboard2__indexChartCard__heading {
+            color: white;
+        }
+        .dashboard2__indexChartCard-left__content {
+            color: gray;
+            font-weight: 400;
+            > span {
+                font-weight: 400;
+                margin-left: 10px;
+                color: rgb(0, 218, 0);
+            }
+        }
+    }
+}

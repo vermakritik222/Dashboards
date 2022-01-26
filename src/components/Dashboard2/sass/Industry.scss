@@ -1,0 +1,40 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__industry {
+    background: $color-indexChart-Bg;
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    > header {
+        @include FlexBox(row);
+        justify-content: space-between;
+        > .dashboard2__industry_heading {
+            color: $color-white;
+            text-transform: capitalize;
+            margin-left: 5px;
+        }
+    }
+    > section {
+        margin-top: 20px;
+        @include FlexBox(row);
+        > .dashboard2__industry-left {
+            margin-right: 10px;
+            margin-top: 20px;
+            > .dashboard2__industry-left__btnCover {
+                width: max-content;
+                margin: 10px 0;
+            }
+        }
+        > .dashboard2__industry-right {
+            @include FlexBox(row);
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                height: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $color-scrollbar;
+            }
+        }
+    }
+}

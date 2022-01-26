@@ -1,0 +1,38 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__myWatchlistCard {
+    @include FlexBox(row);
+    color: white;
+    margin: 10px 0;
+    width: 90em;
+    // flex-wrap: nowrap;
+    justify-content: space-between;
+    > .dashboard2__myWatchlistCard-nameNsym {
+        @include FlexBox(row);
+        // flex-wrap: nowrap;
+        justify-content: space-between;
+        // margin-right: 30px;
+        width: 10%;
+        > div {
+            text-transform: capitalize;
+            // margin-right: 10px;
+        }
+    }
+    > .dashboard2__myWatchlistCard-data {
+        @include FlexBox(row);
+        // flex-wrap: nowrap;
+        width: 80%;
+        justify-content: space-between;
+        > div {
+            text-transform: capitalize;
+            // margin-right: 10px;
+        }
+    }
+}
+.dashboard2__myWatchlistCard-high {
+    color: $color-turkish;
+}
+.dashboard2__myWatchlistCard-low {
+    color: $color-red;
+}

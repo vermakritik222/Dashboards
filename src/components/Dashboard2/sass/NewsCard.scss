@@ -1,0 +1,14 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__newsCard {
+    margin: 20px 0;
+    .dashboard2__newsCard__heading {
+        color: $color-text-primary;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .dashboard2__newsCard__content {
+        color: $color-white;
+    }
+}

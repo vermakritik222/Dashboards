@@ -1,0 +1,23 @@
+// @import "./util_style/components";
+@import "../../components/Dashboard2/sass/util_style/variables";
+@import "../../components/Dashboard2/sass/util_style/components";
+
+.dashboard2 {
+    // height: max-content;
+    background: $color-main-Bg;
+    > .dashboard2__mainSec {
+        > .dashboard2__Nav {
+            padding-top: 12px;
+        }
+        > .dashboard2__mainBody {
+            .dashboard2__mainBody__row1,
+            .dashboard2__mainBody__row3 {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+            }
+        }
+    }
+}

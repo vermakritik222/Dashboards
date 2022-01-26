@@ -1,0 +1,21 @@
+@import "./util_style/components";
+@import "./util_style/variables";
+
+.dashboard2__news {
+    background: $color-indexChart-Bg;
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    > header {
+        @include FlexBox(row);
+        justify-content: space-between;
+        > .dashboard2__news__heading {
+            color: $color-white;
+            text-transform: capitalize;
+            margin-left: 5px;
+        }
+    }
+    .dashboard2__news__content {
+        margin-left: 5px;
+    }
+}

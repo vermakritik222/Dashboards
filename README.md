@@ -5,3 +5,7 @@
 # Dashboard 2
 
 <img src="/screenshorts/Screenshot(684).png"/>
+
+# Dashboard 3
+
+<img src="/screenshorts/Screenshot(686).jpg"/>

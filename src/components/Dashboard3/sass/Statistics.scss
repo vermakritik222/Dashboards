@@ -1,0 +1,45 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__Statistics {
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    background: $color-bg-primary;
+    > header {
+        > h2 {
+            color: $color-white;
+            text-transform: capitalize;
+        }
+    }
+    > section {
+        margin-top: 20px;
+        .dashboard3__Statistics__price {
+            margin-bottom: 20px;
+            > p {
+                @include FlexBox(row);
+                align-items: center;
+                margin-top: 10px;
+                font-size: 1.7rem;
+                color: $color-white;
+                > span {
+                    margin-left: 5px;
+                    font-size: 0.9rem;
+                }
+            }
+            .dashboard3__Statistics__priceBanner {
+                @include FlexBox(row);
+                align-items: center;
+                > p {
+                    color: $color-white;
+                    margin-right: 5px;
+                }
+                > img {
+                    object-fit: contain;
+                    height: 25px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

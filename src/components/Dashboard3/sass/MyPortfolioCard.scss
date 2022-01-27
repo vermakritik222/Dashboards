@@ -1,0 +1,39 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__myPortfolioCard {
+    @include FlexBox(row);
+    align-items: center;
+    margin: 25px 0;
+    > .dashboard3__myPortfolio__img {
+        // border-radius: 50%;
+        // width: min-content;
+        margin-right: 10px;
+        // height: min-content;
+        overflow: hidden;
+        > img {
+            padding-right: 5px;
+            object-fit: contain;
+            height: 40px;
+        }
+    }
+    > .dashboard3__myPortfolio__content {
+        width: 100%;
+        @include FlexBox(row);
+        align-items: center;
+        justify-content: space-between;
+        > .dashboard3__myPortfolio__left,
+        > .dashboard3__myPortfolio__right {
+            > p:first-child {
+                font-weight: 500;
+                color: $color-white;
+                text-transform: capitalize;
+            }
+            > P:last-child {
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                color: $color-text-primary;
+            }
+        }
+    }
+}

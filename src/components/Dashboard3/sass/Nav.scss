@@ -1,0 +1,25 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__nav {
+    padding: 5px 10px;
+    @include FlexBox(row);
+    align-items: center;
+    justify-content: space-between;
+    > header {
+        .dashboard3__nav__logo {
+            color: $color-white;
+        }
+    }
+    .dashboard3__nav__items {
+        // width: 33%;
+        .dashboard3__nav__item {
+            margin: 0 4px;
+        }
+    }
+    > section {
+        justify-content: space-between;
+        @include FlexBox(row);
+        align-items: center;
+    }
+}

@@ -1,0 +1,28 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__myPortfolio {
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 20em;
+    background: $color-bg-primary;
+    > header {
+        > h2 {
+            color: $color-white;
+            text-transform: capitalize;
+        }
+    }
+    > section {
+        overflow-y: scroll;
+        height: 16em;
+        margin-top: 20px;
+        padding-right: 15px;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $color-scrollbar;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__totalBalance {
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    background: $color-bg-primary;
+    > header {
+        > .dashboard3__totalBalance__heading {
+            > h2 {
+                color: $color-white;
+                text-transform: capitalize;
+            }
+        }
+    }
+    > section {
+        @include FlexBox(row);
+        align-items: center;
+        margin-top: 40px;
+        justify-content: space-between;
+        > .dashboard3__totalBalance__left {
+            > P {
+                text-transform: capitalize;
+                color: $color-text-primary;
+                margin-bottom: 4px;
+            }
+            > h1 {
+                color: $color-white;
+                margin-bottom: 4px;
+            }
+        }
+        > .dashboard3__totalBalance__right {
+            @include FlexBox(row);
+            margin-bottom: 10px;
+            > .dashboard3__totalBalance__right__inr {
+                margin-right: 40px;
+                > .dashboard3__totalBalance__right__inr-iconbox {
+                    @include FlexBox(row);
+                    > .dashboard3__totalBalance__right__inr-icon {
+                        padding: 7px;
+                        background-color: #5d8dcf3b;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        margin-right: 10px;
+                        border: 2px solid #5d8dcf79;
+                    }
+                    > .dashboard3__totalBalance__right__inr-content {
+                        > p:first-child {
+                            color: $color-white;
+                        }
+                        > p:last-child {
+                            text-transform: capitalize;
+                            color: $color-text-primary;
+                        }
+                    }
+                }
+            }
+            > .dashboard3__totalBalance__right__inl {
+                > .dashboard3__totalBalance__right__inl-iconbox {
+                    @include FlexBox(row);
+                    > .dashboard3__totalBalance__right__inl-icon {
+                        padding: 7px;
+                        background-color: #4698b93a;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        margin-right: 10px;
+                        border: 2px solid #4698b9b2;
+                    }
+                    > .dashboard3__totalBalance__right__inl-content {
+                        > p:first-child {
+                            color: $color-white;
+                        }
+                        > p:last-child {
+                            text-transform: capitalize;
+                            color: $color-text-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 530px) {
+    > section {
+        align-items: center;
+    }
+    .dashboard3__totalBalance__right {
+        flex-direction: column !important;
+        height: 14em;
+        justify-content: space-between;
+        .dashboard3__totalBalance__right__in {
+            margin-bottom: 10px !important;
+        }
+    }
+}

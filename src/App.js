@@ -1,6 +1,7 @@
 import "./App.css";
 import Dashboard1 from "./page/Dashboard1";
 import Dashboard2 from "./page/Dashboard2";
+import Dashboard3 from "./page/Dashboard3";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <Dashboard3 />
+          </Route>
+          <Route exact path="/Dashboard2">
             <Dashboard2 />
           </Route>
           <Route exact path="/Dashboard1">

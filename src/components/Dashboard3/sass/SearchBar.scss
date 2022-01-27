@@ -1,0 +1,19 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__SearchBar {
+    padding: 20px;
+    // width: 100%;
+    @include FlexBox(row);
+    justify-content: space-between;
+    > section:first-child {
+        width: 75%;
+        transition: width 500ms ease-in-out;
+    }
+    > section:last-child {
+        // width: 20%;
+        @include FlexBox(row);
+        align-items: center;
+    }
+    // margin: 10px;
+}

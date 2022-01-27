@@ -1,0 +1,51 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__watchlist {
+    max-width: 100%;
+    @include FlexBox(column);
+    justify-content: space-between;
+    // align-items: center;
+    // max-width: ;
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    background: $color-bg-primary;
+    > header {
+        // width: 100%;
+        // align-self: flex-start;
+        > h2 {
+            text-align: start;
+            color: $color-white;
+            text-transform: capitalize;
+        }
+    }
+    > section {
+        width: 50em;
+        margin-top: 30px;
+        @include FlexBox(row);
+        // justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $color-scrollbar;
+        }
+    }
+}
+@media only screen and(max-width: 1200px) {
+    .dashboard3__watchlist {
+        > section {
+            width: 30em;
+        }
+    }
+}
+@media only screen and(max-width: 950px) {
+    .dashboard3__watchlist {
+        > section {
+            width: unset;
+        }
+    }
+}

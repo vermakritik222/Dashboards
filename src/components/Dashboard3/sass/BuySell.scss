@@ -1,0 +1,45 @@
+@import "./util_style/variables";
+@import "./util_style/components";
+
+.dashboard3__buySell {
+    min-width: 20em;
+    margin: 7px;
+    border-radius: 10px;
+    background: $color-bg-primary-1;
+
+    .dashboard3__buySell__header {
+        @include FlexBox(row);
+        justify-content: space-between;
+        > div {
+            width: 100%;
+            > button {
+                padding: 20px;
+                width: 100%;
+                color: white;
+            }
+        }
+    }
+    > section {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        > div {
+            margin: 2rem;
+        }
+    }
+}
+.dashboard3__buySell__item {
+    @include FlexBox(row);
+    align-items: center;
+    > img {
+        object-fit: contain;
+        height: 30px;
+        margin-right: 7px;
+    }
+    > p {
+        text-transform: capitalize;
+        > span {
+            color: $color-text-primary;
+            text-transform: uppercase;
+        }
+    }
+}

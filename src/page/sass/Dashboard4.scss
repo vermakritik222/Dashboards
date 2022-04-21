@@ -1,0 +1,23 @@
+.Dashboard4 {
+    display: flex;
+    height: 100vh;
+    // align-items: center;
+    padding: 10px 0;
+    background-color: #181822;
+    > .Dashboard4_sec1 {
+        padding: 10px 0px 10px 10px;
+    }
+    > .Dashboard4_sec2 {
+        width: 100%;
+        > .Dashboard4_mid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 20px;
+        }
+    }
+    > .Dashboard4_sec3 {
+        width: 36%;
+        margin: 0px 25px 0px 10px;
+    }
+}

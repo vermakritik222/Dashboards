@@ -1,0 +1,18 @@
+#progress-spinner {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#middle-circle {
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #23212e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}

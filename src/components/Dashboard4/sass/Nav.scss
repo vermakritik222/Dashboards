@@ -1,0 +1,17 @@
+.Dashboard4_Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px 20px 10px 20px;
+    > input {
+        width: 19em;
+        background-color: #22222e;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        color: azure;
+        outline: none;
+    }
+}

@@ -1,0 +1,37 @@
+.dashboard4_Card {
+    color: azure;
+    border-radius: 20px;
+    // margin: 10px;
+    padding: 20px;
+    width: 49%;
+    background: #22222e;
+    .header {
+        margin-bottom: 10px;
+        p {
+            text-transform: capitalize;
+        }
+    }
+    .mid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > h2 {
+            margin-right: 20px;
+        }
+        > p {
+            color: rgb(0, 255, 0);
+        }
+    }
+    .bar {
+        height: 15px;
+        width: 95%;
+        margin: 10px auto 0 auto;
+        border-radius: 10px;
+        background-color: #3a323f;
+        > div {
+            height: 15px;
+
+            border-radius: 10px 0px 0px 10px;
+        }
+    }
+}

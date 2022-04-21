@@ -1,0 +1,32 @@
+.Dashboard4_Graph {
+    height: 19.5em;
+    margin: 15px 20px;
+    padding: 15px;
+    background: #22222e;
+    border-radius: 20px;
+    > .header {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        > div {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            > p {
+                text-transform: capitalize;
+                color: aliceblue;
+            }
+            > div {
+                margin-right: 5px;
+                height: 10px;
+                width: 10px;
+                background: #f3799e;
+            }
+        }
+    }
+    > .Graph {
+        margin-top: 20px;
+        height: 85%;
+        width: 100%;
+    }
+}

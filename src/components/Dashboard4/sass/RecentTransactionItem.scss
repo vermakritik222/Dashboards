@@ -1,0 +1,27 @@
+.dashboard4_recentTransactionItem {
+    display: flex;
+    margin: 5px 0px;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    > .secl {
+        display: flex;
+        align-items: center;
+        > .img {
+            margin-right: 5px;
+            padding: 17px;
+            background-color: #22222e;
+            border-radius: 10px;
+        }
+        > .data {
+            > p {
+                font-size: 0.9rem;
+            }
+            > p:last-child {
+                margin-top: 2px;
+                color: #5a5a62;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

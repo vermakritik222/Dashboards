@@ -1,0 +1,38 @@
+.dashboard4_recentTransaction {
+    color: rgb(240, 255, 255);
+    > .secup {
+        > nav {
+            display: flex;
+            justify-content: space-between;
+            > h2 {
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        > .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            > img {
+                height: 180px;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+        }
+    }
+    > .secdown {
+        > nav {
+            display: flex;
+            justify-content: space-between;
+            > h2 {
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        > p {
+            color: #56565e;
+        }
+    }
+}
